@@ -2,23 +2,23 @@
 <div class="main-item">
     <div class="header">
         <span>{{title}}</span>
-        <span style="float:right">valor</span>
+        <span style="float:right">Valor</span>
     </div>
     <div class="body">
         <div class="line">
             <span v-if="texto1">{{texto1}}</span>
-            <span style="font-size:11px; color:#383434" v-if="texto2">{{texto2}}</span>
+            <span  style="font: normal normal 300 10px Segoe UI; font-weight: 300; opacity: 80%" v-if="texto2"> (Parcela{{texto2}})</span>
             <span style="color:#72BF44; font-weigth:bolder; float:right" v-if="texto3">{{texto3}}</span>
         </div>
         <div class="line">
              <span v-if="texto4">{{texto4}}</span>
-            <span style="font-size:11px; color:#383434" v-if="texto5">({{texto5}} de {{texto52}})</span>
+            <span  style="font: normal normal 300 10px Segoe UI; font-weight: 300; opacity: 80%" v-if="texto5"> (Parcela{{texto5}} de {{texto52}})</span>
             <span style="color:#72BF44; font-weigth:bolder; float:right" v-if="texto6">{{texto6}}</span>
         
         </div>
         <div class="line">
              <span v-if="texto7">{{texto7}}</span>
-            <span style="font-size:11px; color:#383434" v-if="texto8">({{texto8}} de {{texto82}})</span>
+            <span  style="font: normal normal 300 10px Segoe UI; font-weight: 300; opacity: 80%" v-if="texto8"> (Parcela{{texto8}} de {{texto82}})</span>
             <span style="color:#72BF44; font-weigth:bolder; float:right" v-if="texto9">{{texto9}}</span>
         
         </div>
@@ -58,17 +58,19 @@ export default {
 <style scoped>
 .main-item{
     background-color: white  !important;;
-    width: 75%;
+    width: 80%;
     min-height: 130px;
-    padding: 20px;
+    padding: 25px;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 5px;
 }
 .line{
-    margin-top: 11px;
+    margin-top: 15px;
     width: 100%;
     font: normal normal bold 12px Segoe UI;
+    font-weight: 800;
+    color: #383434;
 }
 .header{
     justify-content: space-between;
@@ -84,5 +86,22 @@ export default {
     margin-top: 30px;
     font: normal normal bold 12px Segoe UI;
     letter-spacing: 0px;
+}
+@media screen and (max-width: 700px) {
+    .main-item{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 701px) {
+     .main-item{
+        font-size: 14px !important;
+    }
+    .body{
+        justify-content: start;
+        text-align: left;
+    }
+    .footer{
+        text-align: start;
+    }
 }
 </style>

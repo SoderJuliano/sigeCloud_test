@@ -19,7 +19,7 @@
                 texto12="R$ 166,25"
             />
         </div>
-        <div style="padding: 20px; width:100%; margin-left: 20%;" class="payment">
+        <div class="payment">
             <BntPayment class="payment-bnt"/>
         </div>
     </div>
@@ -70,10 +70,19 @@ export default {
         height: 35%;
         margin-left: -8px;
     }
+    .payment{
+        padding: 20px; width:100%; margin-left: 20%;
+    }
 }
 @media screen and (min-width: 701px) {
     .main{
-        width: 400px;
+        width: 100%;
+        min-width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .payment{
+        padding: 20px; width:100%;
     }
 }
 

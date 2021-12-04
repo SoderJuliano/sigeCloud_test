@@ -5,16 +5,42 @@
 </template>
 
 <style scoped>
-.footer{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    position: fixed;
-    bottom: 15px;
-    width: 100%;
+
+
+@media screen and (min-width: 701px) {
+    img{
+        margin: 0 auto;
+        width: 15%;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        height: 7%;
+        width: 100%;
+        min-height: 40px;
+
+    }
 }
-img{
-    margin: 0 auto;
-    width: 26%;
+@media screen and (max-width: 701px) {
+    img{
+        margin: 0 auto;
+        width: 35%;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        height: 7%;
+        width: calc(100vw + 5px);
+        min-height: 40px;
+
+    }
 }
 </style>

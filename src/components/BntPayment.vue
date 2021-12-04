@@ -19,6 +19,16 @@ button{
     font-family: 'Segoe';
     font-weight: bolder;
     color: white;
+}
+@media screen and (min-width: 701px) {
+ button{
+    font-size: 14px;
+ }   
+}
+
+@media screen and (max-width: 701px) {
+  button{
     font-size: 12px;
+ }  
 }
 </style>

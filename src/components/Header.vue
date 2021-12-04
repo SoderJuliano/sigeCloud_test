@@ -31,4 +31,14 @@ export default {
 }
 
 }
+
+@media screen and (min-width: 701px) {
+    .header{
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-around;
+        display: flex;
+    }
+}
 </style>
