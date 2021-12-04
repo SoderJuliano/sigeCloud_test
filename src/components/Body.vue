@@ -1,7 +1,8 @@
 <template>
-    <div class="main">
-        <div class="fatura">
+    <div :style="`background-color:${cor}; position:${position}`"  class="main">
+        <div v-if="`${fatura}`" class="fatura">
             <Item
+                class="item"
                 :title=title
                 :texto1=plano50Mb
                 :texto3=Mb50R$
@@ -42,22 +43,31 @@ export default {
             totaisDeParcelasSeguro:6,
             parcelaRoteador:5,
             totaisDeParcelasTP:6
-
         }
+    },
+    props:{
+        cor:String,
+        fatura:Boolean,
+        position:String
     }
 }
 </script>
 <style scoped>
+.fatura{
+    display: block;
+    padding-top: 10px;
+}
 .main{
-    background-color: #004798;
     min-height: 300px;
     justify-content: center;
-    position: fixed;
+}
+.item{
+    margin-top: 20px;
 }
 @media screen and (max-width: 700px) {
     .main{
         width: 100vw;
-        height: 30%;
+        height: 35%;
         margin-left: -8px;
     }
 }

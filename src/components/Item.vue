@@ -66,7 +66,7 @@ export default {
     border-radius: 5px;
 }
 .line{
-    margin-top: 10px;
+    margin-top: 11px;
     width: 100%;
     font: normal normal bold 12px Segoe UI;
 }
