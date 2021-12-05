@@ -35,7 +35,7 @@
         display: flex;
         justify-content: center;
         background-color: white;
-        position: fixed;
+        position: relative;
         bottom: 0px;
         left: 0;
         height: 7%;
