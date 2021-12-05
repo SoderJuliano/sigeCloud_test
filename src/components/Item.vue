@@ -1,7 +1,7 @@
 <template>
 <div class="main-item">
     <div class="header">
-        <span>{{title}}</span>
+        <span style="float: left">{{title}}</span>
         <span style="float:right">Valor</span>
     </div>
     <div class="body">
@@ -99,6 +99,7 @@ export default {
     .body{
         justify-content: start;
         text-align: left;
+        margin-top: 50px;
     }
     .footer{
         text-align: start;

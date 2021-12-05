@@ -11,12 +11,13 @@
     img{
         margin: 0 auto;
         width: 15%;
+        max-width: 160px;
+        margin-bottom: 10px;
     }
     .footer{
         display: flex;
         justify-content: center;
         background-color: white;
-        position: fixed;
         bottom: 0px;
         left: 0;
         height: 7%;
