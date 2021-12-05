@@ -141,6 +141,9 @@ p span{
         justify-content: space-between;
         padding-left: 8%;
     }
+    .row a{
+        left: -30px;
+    }
 }
 @media screen and (max-width: 700px) {
     .row{
@@ -154,6 +157,9 @@ p span{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .row a{
+        left: -15px;
+    }
 }
 
 .row p{
@@ -166,7 +172,7 @@ p span{
     text-align: start;
 }
 .row a{
-    left: -15px;
+    
     text-decoration:none;
     font: normal normal 300 10px Segoe UI;
     color: #757575;
